@@ -1,3 +1,9 @@
+// This utility loads 1 or more .MD5 files and then checks if the files in 
+//      all of them has the same MD5 checksum.
+// Useful to check if unexpected unmatching duplicates exist in one
+//      or, mainly, across many computers.
+// Licensed under GPL 3
+
 unit fmMain;
 
 interface
@@ -148,9 +154,9 @@ begin
 
   MyFiles := TFileSet.Create([doOwnsValues]);
 
-  gridMD5.Rows[0].Text := 'Файл MD5'#13#10'Путь';
-  gridFiles.Rows[0].Text := 'Файл'#13#10'N';
-  gridDetails.Rows[0].Text := 'MD5'#13#10'Путь'#13#10'Источник';
+  gridMD5.Rows[0].Text := 'пїЅпїЅпїЅпїЅ MD5'#13#10'пїЅпїЅпїЅпїЅ';
+  gridFiles.Rows[0].Text := 'пїЅпїЅпїЅпїЅ'#13#10'N';
+  gridDetails.Rows[0].Text := 'MD5'#13#10'пїЅпїЅпїЅпїЅ'#13#10'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
 end;
 
 procedure TfmCompare.FormDestroy(Sender: TObject);
